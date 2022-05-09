@@ -7,7 +7,7 @@ spec:
   entryPoints:
     - web
   routes:
-  - match: Host('machinelearning-models.com')
+  - match: Host(`machinelearning-models.com`)
     kind: Rule
     services:
     - name: app-service
