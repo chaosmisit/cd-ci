@@ -18,5 +18,5 @@ spec:
         image: heniosilva/ci-test
         ports: 
           - name: web
-            containerPort: 80
+            containerPort: 5000
 

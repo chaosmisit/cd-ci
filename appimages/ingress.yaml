@@ -11,4 +11,4 @@ spec:
     kind: Rule
     services:
     - name: app-service
-      port: 80
+      port: 5000
