@@ -1,12 +1,12 @@
 FROM python:3.9.2
 
-WORKDIR /app
+WORKDIR /source
 
 COPY . .
 
-RUN pip install -r app/requirements.txt
+RUN pip install -r source/requirements.txt
 
-ENV FLASK_APP "app/ci-test"
+ENV FLASK_APP "source/ci-test"
 
 CMD ["python","-m","flask","run","--host=0.0.0.0"]
 

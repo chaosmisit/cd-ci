@@ -11,7 +11,7 @@ metadata:
 spec:
   project: default
   source:
-    path: argocdapps
+    path: argocd-applications
     repoURL: https://github.com/chaosmisit/cd-ci.git
     targetRevision: HEAD
   destination:
