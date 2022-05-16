@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    path: appimages
+    path: application
     repoURL: https://github.com/chaosmisit/cd-ci.git
     targetRevision: HEAD
   destination:
