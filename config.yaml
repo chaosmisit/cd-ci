@@ -15,7 +15,7 @@ spec:
     repoURL: https://github.com/chaosmisit/cd-ci.git
     targetRevision: HEAD
     kustomize:
-      version: v4.4.0
+      version: v4.0.5
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
