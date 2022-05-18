@@ -5,12 +5,18 @@ metadata:
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: heniosilva/ci-test
+    argocd-image-updater.argoproj.io/myimage.update-strategy: digest
+    argocd-image-updater.argoproj.io/write-back-method: git
 spec:
   project: default
   source:
     path: application
     repoURL: https://github.com/chaosmisit/cd-ci.git
     targetRevision: HEAD
+    kustomize:
+      version: v4.0.5
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
