@@ -9,6 +9,7 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: testapp=heniosilva/ci-test
     argocd-image-updater.argoproj.io/testapp.update-strategy: digest
     argocd-image-updater.argoproj.io/testapp.write-back-method: git
+    argocd-image-updater.argoproj.io/testapp.force-update: "true"
 spec:
   project: default
   source:
