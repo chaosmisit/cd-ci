@@ -6,9 +6,9 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
-    argocd-image-updater.argoproj.io/image-list: heniosilva/ci-test
-    argocd-image-updater.argoproj.io/myimage.update-strategy: digest
-    argocd-image-updater.argoproj.io/write-back-method: git
+    argocd-image-updater.argoproj.io/image-list: testapp=heniosilva/ci-test
+    argocd-image-updater.argoproj.io/testapp.update-strategy: digest
+    argocd-image-updater.argoproj.io/testapp.write-back-method: git
 spec:
   project: default
   source:
