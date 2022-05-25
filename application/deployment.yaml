@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: gcr.io/data-platform-347009/github.com/vivid-games/ci-cd
+        image: us-central1-docker.pkg.dev/data-platform-347009/data-platform-registry/ci-cd
         ports: 
           - name: web
             containerPort: 5000
