@@ -8,8 +8,16 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`127.0.0.1`)
+      match: Host(`argocd.machinelearning-models.com`)
       priority: 10
       services:
         - name: argocd-server
           port: 80
+    - kind: Rule
+      match: Host(`argocd.machinelearning-models.com`) && Headers(`Content-Type`, `application/grpc`)
+      priority: 11
+      services:
+        - name: argocd-server
+          port: 80
+          scheme: h2c
+  tls: {}

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: heniosilva/ci-test
+        image: gcr.io/data-platform-347009/github.com/vivid-games/ci-cd
         ports: 
           - name: web
             containerPort: 5000
