@@ -8,7 +8,7 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list: testapp=us-central1-docker.pkg.dev/data-platform-347009/data-platform-registry/ci-cd
     argocd-image-updater.argoproj.io/testapp.update-strategy: latest
-    argocd-image-updater.argoproj.io/testapp.write-back-method: git
+    argocd-image-updater.argoproj.io/testapp.write-back-method: argocd
     argocd-image-updater.argoproj.io/testapp.force-update: "true"
 spec:
   project: default
